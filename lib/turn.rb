@@ -32,19 +32,19 @@ def move(board, index, char = 'X')
   board[index] = char
 end
 
-def turn(board)
-  puts "Please enter 1-9:"
-  index = input_to_index(gets.chomp)
-  unless valid_move?(board, index)
-    # you could also do -- unless !valid_move?(board, index)
-    puts "Please enter 1-9:"
-    input = gets.chomp
-  else
-    move(board, index)
-    puts "Please enter 1-9:"
-    display_board(board)
-  end
-end
+# def turn(board)
+#   puts "Please enter 1-9:"
+#   index = input_to_index(gets.chomp)
+#   unless valid_move?(board, index)
+#     # you could also do -- unless !valid_move?(board, index)
+#     puts "Please enter 1-9:"
+#     input = gets.chomp
+#   else
+#     move(board, index)
+#     puts "Please enter 1-9:"
+#     display_board(board)
+#   end
+# end
 
 def turn(board)
   puts "Please enter 1-9:"
