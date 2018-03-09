@@ -32,6 +32,7 @@ def move(board, index, char = 'X')
   board[index] = char
 end
 
+# this is also valid and passes all the tests:
 # def turn(board)
 #   puts "Please enter 1-9:"
 #   index = input_to_index(gets.chomp)
